@@ -121,7 +121,7 @@ const ShareModal = ({ remove, update, postId }) => {
                 }
             })
         })
-    }, [])
+    })
 
 
 

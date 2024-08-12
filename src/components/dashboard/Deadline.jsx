@@ -20,7 +20,7 @@ const Deadline = forwardRef((props, ref) => {
     // call getPosts to get the first 4 posts
     useLayoutEffect(() => {
       getPosts()
-    }, [])
+    })
   
     useImperativeHandle(ref, (e) => ({
       onScroll: (e) => {

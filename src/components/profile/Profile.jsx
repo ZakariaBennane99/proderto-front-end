@@ -120,7 +120,7 @@ const Profile = ({ data }) => {
             const token = JSON.parse(window.localStorage.getItem('prodertoPassToken'))
 
             try {
-                const r = await axios.post(url, formData, {
+                await axios.post(url, formData, {
                     headers: {
                         "content-type": "multipart/form-data",
                         "Accept": "multipart/form-data",

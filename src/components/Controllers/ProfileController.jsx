@@ -30,7 +30,7 @@ const ProfileController = () => {
             console.log(err)
             return setProfile(err.response.status)
         })
-    }, [])
+    }, [token, userId])
 
     
     if (!profile) {

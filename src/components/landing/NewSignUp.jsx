@@ -25,7 +25,7 @@ const NewSignUp = () => {
                 console.log(err)
                 return setIsVerified("No")
             }) 
-    }, [])
+    })
 
     if (isVerified === undefined) {
         return (<div className='loader-holder'>

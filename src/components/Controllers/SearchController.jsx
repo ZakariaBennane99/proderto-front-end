@@ -33,7 +33,7 @@ const SearchController = () => {
             }
         }
         search()
-    }, [query]) 
+    }, [query, token]) 
 
     
     if (res) {

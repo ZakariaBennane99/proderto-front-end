@@ -25,7 +25,7 @@ const Achieved = forwardRef((props, ref) => {
   // call getPosts to get teh first 4 posts
   useEffect(() => {
     getPosts()
-  }, [])
+  })
 
   
   // the ref is coming from AchDead.jsx

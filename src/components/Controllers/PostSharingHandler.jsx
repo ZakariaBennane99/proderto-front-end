@@ -24,7 +24,7 @@ const PostSharingPageHandler = () => {
             console.log(err)
             window.location.reload()
         })
-    }, [])
+    }, [postId])
 
 
     if (!data) {

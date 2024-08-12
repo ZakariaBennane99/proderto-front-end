@@ -32,7 +32,7 @@ const PostController = () => {
             }
         }
         getPost()
-    }, [])
+    }, [token, postId])
     
     if (re === 200) {
         return <Post data={ data }/>

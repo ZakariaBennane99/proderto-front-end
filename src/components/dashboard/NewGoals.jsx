@@ -20,7 +20,7 @@ const NewGoals = forwardRef((props, ref) => {
   // call getPosts to get the first 4 posts
   useEffect(() => {
     getPosts()
-  }, [])
+  })
 
   useImperativeHandle(ref, (e) => ({
     onScroll: (e) => {

@@ -26,7 +26,7 @@ const HomePageController = () => {
             console.log(err)
             return setRe(err.response.status)
         })
-    }, [])
+    }, [token])
     
     if (re === 200) {
         return <Page404LoggedIn />

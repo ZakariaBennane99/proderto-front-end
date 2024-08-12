@@ -15,6 +15,7 @@ const Feedback = ({ init }) => {
     async function handleFeedback () {
         const URL = "http://localhost:3000/api/marketing"
         const r = await axios.post(URL, { rating: rating, feedback: feedback })
+        console.log(r)
         setRemove(!remove)
         init()
     } 

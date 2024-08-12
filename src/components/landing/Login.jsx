@@ -145,11 +145,11 @@ const LogIn = () => {
       if (error.response.status === 401 || error.response.status === 403) {
         setleftErrors(error.response.data.errors[0].msg)
       } else if (error.response.status === 400) {
-        error.response.data.errors.map(el => {
+        error.response.data.errors.forEach(el => {
           setValidationErrors((prev) => {
             return {...prev, [el.param]: true}
-          })
-        })
+          });
+        });
         // server error 500
       } else {
         setleftErrors('Please try again!')

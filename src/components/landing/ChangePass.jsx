@@ -32,7 +32,7 @@ const ChangePass = () => {
           // we have included this clickedSendfORRGOT jsut to make sure that 
           // if the user asks again for the pass change an the req has already
           // expired, we will check the passtoken to show the right message 
-    }, [clickedSendForgot])
+    }, [clickedSendForgot, token])
     
 
 

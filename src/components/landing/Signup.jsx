@@ -84,11 +84,11 @@ const SignUp = () => {
       if (err.response.status === 401) {
         setleftErrors(err.response.data.errors[0].msg)
       } else if (err.response.status === 400) {
-        err.response.data.errors.map(el => {
+        err.response.data.errors.forEach(el => {
           setValidationErrors((prev) => {
-            return {...prev, [el.param]: true}
-          })
-        })
+            return {...prev, [el.param]: true};
+          });
+        });        
         // if server error
       } else {
         setleftErrors('Please refresh the page and try again!')
